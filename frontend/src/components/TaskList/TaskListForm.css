@@ -1,0 +1,71 @@
+.task-list-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.task-list-form .input-wrapper {
+  margin-bottom: 15px;
+}
+
+.task-list-form .input-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.task-list-form .input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.task-list-form .input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.task-list-form .form-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.task-list-form .button {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-list-form .button[type="submit"] {
+  background-color: #28a745; 
+  color: white;
+  border: none;
+}
+
+.task-list-form .button[type="submit"]:hover {
+  background-color: #1e7e34;
+}
+
+.task-list-form .button.cancel-button {
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+}
+
+.task-list-form .button.cancel-button:hover {
+  background-color: #c82333;
+}

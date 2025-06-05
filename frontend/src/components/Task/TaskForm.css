@@ -1,0 +1,13 @@
+.task-form{
+    background-color: #e2e2e2;
+    width: 330px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.task-form label{
+    color: black;
+    margin-top: 5px;
+}

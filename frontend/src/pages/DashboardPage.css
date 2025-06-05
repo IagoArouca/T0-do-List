@@ -1,0 +1,85 @@
+.dashboard-container {
+  padding: 20px;
+  background-image: url('/img/parede azul.jpg'); 
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-image: url('/img/parede azul.jpg');
+  border: 1px solid wheat;
+
+}
+
+.dashboard-header h1 {
+  color: white;
+  font-size: 1.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.dashboard-header button {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.dashboard-header button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-actions {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid wheat;
+  border-radius: 3px;
+}
+
+.dashboard-actions button {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.dashboard-actions button:hover {
+  background-color: #1e7e34;
+}
+
+.dashboard-actions .cancel-button {
+  background-color: #dc3545; 
+}
+
+.dashboard-actions .cancel-button:hover {
+  background-color: #c82333;
+}
+
+.task-lists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 10px;
+}

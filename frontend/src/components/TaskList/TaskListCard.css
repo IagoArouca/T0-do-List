@@ -1,0 +1,114 @@
+.task-list-card-link {
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
+}
+
+.task-list-card {
+  position: relative; 
+  background-color: #ffd133; 
+  border: 1px solid black; 
+  border-radius: 8px; 
+  box-shadow: 6px 4px 8px black; 
+  overflow: hidden; 
+  padding-top: 20px; 
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px; 
+  max-width: 300px; 
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.task-list-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px black; 
+}
+
+.task-list-card-tab {
+  position: absolute;
+  top: 0;
+  left: 15px; 
+  width: 90px; 
+  height: 25px;
+  background-color: white; 
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  z-index: 1; 
+}
+
+.task-list-card-content {
+  padding: 15px;
+  padding-top: 5px; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title-with-icon {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.folder-icon {
+  color: blue; 
+  font-size: 1.6rem; 
+}
+
+.task-list-card-content p {
+  margin: 0 0 5px 0; 
+  font-size: 0.9rem;
+}
+
+.task-list-card-content .owner {
+  font-weight: 500; 
+}
+
+.task-list-card-content .collaborators {
+ 
+}
+
+.task-list-card-content .created-at {
+  font-size: 0.8rem;
+}
+
+.task-list-card-content .task-count {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black; 
+  margin-top: auto;
+  text-align: right; 
+  padding-top: 10px; 
+  border-top: 1px dashed var(--border-color); 
+}
+.delete-tasklist-button {
+    position: absolute; 
+    top: 5px;   
+    right: 5px;  
+    background: none;
+    border: none; 
+    color: #dc3545; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8; 
+    z-index: 2; 
+}
+.delete-tasklist-button:hover {
+    color: #c82333; 
+    background-color: rgba(255, 0, 0, 0.1); 
+    transform: scale(1.1); 
+    opacity: 1;
+}
